@@ -1,0 +1,142 @@
+/* QUERIES */
+@media (max-width: 1480px) {
+  .hero-bg {
+    max-width: 35rem;
+    bottom: 10%;
+  }
+}
+@media (max-width: 1271px) {
+  .hero-bg {
+    max-width: 30rem;
+    bottom: 20%;
+  }
+
+  .hero__wrapper--right > img {
+    max-width: 49rem;
+  }
+}
+@media (max-width: 1242px) {
+  .hero-bg {
+    max-width: 30rem;
+    bottom: 12%;
+  }
+  .hero__wrapper--right > img {
+    max-width: 53rem;
+  }
+}
+@media (max-width: 1098px) {
+  .hero__wrapper {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .hero__wrapper--right {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__wrapper--left {
+    width: 100%;
+  }
+  .hero__wrapper--right > img {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0;
+  }
+  .checklists {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .procedures__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+  }
+
+  .hero {
+    padding-bottom: 0;
+  }
+  .carousel {
+    height: 42.4rem;
+    max-width: 80rem;
+    width: 100%;
+  }
+
+  .procedures__wrapper--right {
+    padding-top: 0;
+    width: 100%;
+  }
+  .procedures__wrapper--left {
+    width: 100%;
+  }
+  .hero-bg {
+    max-width: 40rem;
+    bottom: 4rem;
+  }
+  .frame > img {
+    width: 100%;
+    height: 100%;
+  }
+  br {
+    display: none;
+  }
+}
+@media (max-width: 662px) {
+  .navbar {
+    padding: 1.8rem 2.5rem 0.9rem 2.5rem;
+    box-shadow: 0 0.4rem 3.2rem rgba(215, 215, 215, 0.25);
+  }
+  .navbar__btn {
+    display: none !important;
+  }
+  .navbar__menubtn {
+    display: block;
+  }
+
+  .hero__wrapper--right > img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero__wrapper--left h1 {
+    font-size: 4.4rem;
+  }
+
+  .hero-bg {
+    max-width: 21.3rem;
+    max-height: 22.7rem;
+    width: 100%;
+    bottom: -2rem;
+  }
+  .hero {
+    padding-top: 0;
+  }
+  .container {
+    padding: 0 1.6rem;
+  }
+}
+@media (max-width: 369px) {
+  .hero__wrapper--left h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .hero__wrapper--left p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .checklists {
+    margin-top: 2rem;
+  }
+  .procedures__wrapper--right-list li {
+    gap: 2.5rem;
+  }
+  .carousel-dots {
+    margin-top: 0;
+  }
+  .procedures__wrapper--right-list li > p {
+    font-size: 1.4rem;
+  }
+}

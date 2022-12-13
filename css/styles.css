@@ -1,0 +1,239 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --primary-color: #ffdda9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #12022f;
+}
+@font-face {
+  font-family: 'AvernirNext Bold';
+  src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+  font-family: 'Fellix';
+  src: url(../fonts/Fellix-Regular.ttf);
+}
+@font-face {
+  font-family: 'AvernirNext Regular';
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  font-family: 'AvernirNext Bold';
+}
+header {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.9rem 2.5rem 1.2rem 2.5rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* GENERAL CLASSES */
+.container {
+  max-width: 120rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
+.primary__btn:link,
+.primary__btn:visited {
+  letter-spacing: -0.036rem;
+  background-color: var(--primary-color);
+  padding: 1.5rem 3.5rem;
+  border-radius: 2.8rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.navbar__menubtn {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+/* HERO */
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  max-width: 150rem;
+  margin: 0 auto;
+}
+.hero__wrapper {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+}
+.hero__wrapper--left {
+  width: 41%;
+  padding-top: 4rem;
+}
+.hero-bg {
+  content: url('../assets/imgs/pointersbg.svg');
+  position: absolute;
+  display: block;
+  bottom: 13%;
+  max-width: 44rem;
+  z-index: -1;
+  right: 0;
+}
+.hero__wrapper--left h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.hero__wrapper--left span {
+  color: var(--primary-color);
+}
+.hero__wrapper--left p {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  font-weight: lighter;
+  font-family: 'AvernirNext Regular';
+  color: #594d6d;
+  line-height: 2.8rem;
+}
+.checklists {
+  margin-top: 4rem;
+}
+.checklist {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  min-width: 21.9rem;
+}
+.checklist:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+.checklist-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: #12022f;
+}
+.checklist-icon {
+  height: 2.8rem;
+  border: 0.45rem solid #9c89c1;
+  width: 2.8rem;
+  display: flex;
+  padding: 0.2rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- */
+.hero__wrapper--right {
+  /* position: relative; */
+  width: 59%;
+  text-align: right;
+}
+.hero__wrapper--right > img {
+  z-index: 2;
+  width: 100%;
+  margin-left: 8rem;
+  margin-bottom: 4rem;
+}
+
+.procedures__wrapper {
+  display: flex;
+  gap: 6rem;
+  padding: 5rem 0;
+}
+.procedures__wrapper--left {
+  position: relative;
+  width: 55%;
+}
+
+.procedures__wrapper--right {
+  width: 45%;
+  padding-top: 10rem;
+}
+
+.procedures__wrapper--right-list li {
+  display: flex;
+  gap: 3.1rem;
+  margin-bottom: 4.25rem;
+  font-family: 'Fellix';
+  align-items: center;
+}
+.number {
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: 0.122917rem solid #fff8ee;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+  transform: translateX(-100%);
+}
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.dot {
+  content: '';
+  display: block;
+  cursor: pointer;
+  height: 0.7rem;
+  border-radius: 0.5rem;
+  width: 1rem;
+  background-color: #ffe4bd;
+}
+.active.dot {
+  width: 2.1rem;
+  background-color: #ff9900;
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.4rem;
+  font-weight: 500;
+  border-radius: 50%;
+  width: 4.4rem;
+  background-color: var(--primary-color);
+}
+
+.footer {
+  padding: 3rem 0;
+  margin-top: 5rem;
+  text-align: center;
+}
