@@ -79,12 +79,13 @@ header {
   margin: 0 auto;
 }
 .hero__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
   width: 100%;
   gap: 4rem;
 }
 .hero__wrapper--left {
-  width: 41%;
+  /* width: 41%; */
   padding-top: 4rem;
 }
 .hero-bg {
@@ -96,7 +97,7 @@ header {
   z-index: -1;
   right: 0;
 }
-.hero__wrapper--left h1 {
+.hero__wrapper--left > h1 {
   font-size: 4.8rem;
   font-weight: 700;
   margin-bottom: 4rem;
@@ -104,7 +105,7 @@ header {
 .hero__wrapper--left span {
   color: var(--primary-color);
 }
-.hero__wrapper--left p {
+.hero__wrapper--left > p {
   font-size: 1.8rem;
   margin-bottom: 4rem;
   font-weight: lighter;
@@ -116,10 +117,11 @@ header {
   margin-top: 4rem;
 }
 .checklist {
-  display: flex;
-  gap: 1.6rem;
+  display: grid;
+  grid-template-columns: 0.05fr 1fr;
   align-items: center;
-  min-width: 21.9rem;
+  max-width: 25.5rem;
+  gap: 1.6rem;
 }
 .checklist:not(:last-child) {
   margin-bottom: 1.4rem;
@@ -128,6 +130,7 @@ header {
   font-size: 1.4rem;
   font-weight: 700;
   font-family: inherit;
+  min-width: 21.3rem;
   color: #12022f;
 }
 .checklist-icon {
@@ -144,7 +147,7 @@ header {
 /* ---- */
 .hero__wrapper--right {
   /* position: relative; */
-  width: 59%;
+  /* width: 59%; */
   text-align: right;
 }
 .hero__wrapper--right > img {

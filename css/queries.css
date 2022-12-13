@@ -25,9 +25,15 @@
   }
 }
 @media (max-width: 1098px) {
-  .hero__wrapper {
+  /* .hero__wrapper {
     text-align: center;
     flex-direction: column;
+  } */
+  .hero__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
   }
 
   .hero__wrapper--right {
@@ -43,11 +49,19 @@
     margin: 0;
   }
   .checklists {
+    text-align: left;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    width: 100%;
+    /* display: flex;
+  
     align-items: center;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
   }
 
   .procedures__wrapper {
