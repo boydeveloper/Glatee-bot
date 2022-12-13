@@ -100,9 +100,10 @@ header {
 .hero__wrapper--left > h1 {
   font-size: 4.8rem;
   font-weight: 700;
+  text-align: center;
   margin-bottom: 4rem;
 }
-.hero__wrapper--left span {
+.colored-text {
   color: var(--primary-color);
 }
 .hero__wrapper--left > p {
